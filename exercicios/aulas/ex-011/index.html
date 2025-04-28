@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+    <hr>
+    <picture> <!-- Tag para colocar imagens flexiveis / mais de um tamanho--> <!-- começe sempre na ordem Menor sempre ACIMA - A ordem e importante para o funcionamento do programa-->
+        <source media="(max-width: 750px)" srcset="imagens/300x300.jpg" type="image/png"> <!-- diminui quando a tela for menor que 750px e altera a imagem 1000x1000 para 300x300-->
+        <source media="(max-width: 1050px)" srcset="imagens/700x700.jpg" type="image/jpg"> <!-- diminui a imagem quando a tela for menor que 1050px e altera a imagem 1000x1000 para 700x700-->
+        <img src="imagens/1000x1000.jpg" alt="Foto Grande">
+    </picture>
+    <hr>
+    <h1>Reproduzindo audios</h1>
+    <p>Aprendendo a reproduzir audios em html5</p>
+
+   <!-- Primeira forma  <audio src="midia/inner-outer-lish-grooves.mp3"controls></audio> Use arquivos MP3 WAV OGG-->
+   <!-- Autoplay - Toca automaticamente -->
+   <!-- Loop Toca o audio novamente automaticamente - -->
+   <!-- controls - Mostra os controles de audio -->
+   <!-- Segunda forma a baixo -->
+
+    <p>Existem duas formas de colocar o audio, verifique o HTML para observar as anotações.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/inner-outer-lish-grooves.mp3"type="audio/mpeg">
+        <source src="midia/inner-outer-lish-grooves.wav"type="audio/mpeg">
+        <source src="midia/inner-outer-lish-grooves.ogg"type="audio/mpeg">
+        <p>Infelizmente o seu navegador não e compativel com a reprodução do audio <a href="midia/inner-outer-lish-grooves.mp3">clique aqui para baixar o audio</a></p>
+    </audio>
+    <hr>
+</body>
+</html>

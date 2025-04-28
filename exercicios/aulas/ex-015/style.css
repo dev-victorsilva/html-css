@@ -1,0 +1,28 @@
+@charset "UTF8";
+
+
+body {
+    background-color: rgb(71, 71, 71);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+h1 {
+   color: rgb(194, 194, 194);
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-stretch: expanded; 
+   
+}
+h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+   color: rgb(0, 0, 0);
+   text-align: justify;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+}

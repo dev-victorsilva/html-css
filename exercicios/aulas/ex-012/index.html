@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Reproduzindo videos com HTML5</title>
+</head>
+<body>
+    <h1>Reproduzindo videos</h1>
+    <p>Aprendendo a reproduzir videos em html5 hospedados localmente</p>
+    <p>Este video está hospedado no meu servidor</p>
+    <!-- os formatos de videos são MP4 MP4V WEBM e OGV o ideal e ter varios arquivos de varios formatos-->
+     <hr>
+
+    
+    <!-- Autoplay - Toca automaticamente -->
+    <!-- Loop Toca o audio novamente automaticamente - -->
+    <!-- Poster para adicionar uma capa de primeiro frame ao video-->
+    <!-- controls - Mostra os controles de reprodução -->
+    <!-- Forma simples de adicionar abaixo-->
+
+    <!--<video src="midia/macaco.m4v" width="200" controls></video>-->
+
+
+
+
+    <!-- Autoplay - Toca automaticamente -->
+    <!-- Loop Toca o audio novamente automaticamente - -->
+    <!-- Poster para adicionar uma capa de primeiro frame ao video-->
+    <!-- Controls - Mostra os controles de reprodução -->
+    <!-- Forma complexa e melhor de adicionar abaixo-->
+
+
+    <!-- Forma de adicionar varias opções de formatos a baixo-->
+
+    <video width="560" controls poster="imagens/poster-monkey.jpg">
+        <source src="midia/macaco.m4v" type="video/mp4">
+        <source src="midia/macaco.mp4" type="video/mp4">
+        <source src="midia/macaco.webm" type="video/webm">
+        <p>Video indisponivel <a href="midia/macaco.m4v"> clique aqui para baixar</a></p>
+    </video>
+    <hr>
+    <h1>Reproduzindo videos</h1>
+    <p>Aprendendo a reproduzir videos em html5 hospedados externamente</p>
+    <p>Este video está hospedado no youtube</p>
+    <hr>
+    <!-- Copiei a embed do video do youtube e adicionei aqui-->
+     <!-- Se deseja uma embed que não possa ser acessada use o VIMEO-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=9QNy6djobkmBtJzB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    
+    
+</body>
+</html>
