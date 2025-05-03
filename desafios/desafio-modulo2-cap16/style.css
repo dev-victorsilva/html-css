@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Android;
+    src: url('fontes/idroid.otf') format('opentype'), url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    /*
+    Tipos de Formatos de fonte
+    opentype [otf]
+    truetype [ttf]
+    embedded-opentype
+    truetype - att (Apple Advanced Typography)
+    svg
+    */
+}
+header {
+    background-image: linear-gradient(to bottom, #32b16a, #227847);
+    padding: 10px;
+
+}
+header > h1 {
+    text-align: center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header > p {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+nav {
+    background-color: #227847;
+}
+nav > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 10px;
+    font-weight: normal;
+    text-decoration: none;
+}
+body {
+    background-color: #84e1ad;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body > main > article > h2, 
+body > main > article > h3 {
+    font-family: Android;
+    color: #227847;
+    text-align: left;
+}
+body > main > article > h3 {
+    background-image: linear-gradient(to right, #32b1692f 2%, #ffffff);
+}
+main {
+    background-color: white;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    text-indent: 30px;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: -20px;
+}
+#video {
+    background-color: #227847;
+    padding: 20px;
+}
+
+
+#extra-title {
+    background-color: #88dba1;
+    padding-top: 5px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    width: 85%;
+    padding: 2px;
+    color: #227847;
+}
+#extra {
+    background-color: rgb(188, 190, 188);
+    width: 85%;
+    text-align: left;
+    margin: auto;
+    padding: 2px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#extra > ul > li {
+    list-style-type: '\002714';
+    color: black;
+}
+
+#extra > ul > li a {
+    color: black;
+}
+
+#final {
+    text-align: left;
+    margin: auto;
+}
+footer {
+    background-color: #227847;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    padding: 3px;
+    width: 100%;
+    
+}
+footer > p > a {
+    text-decoration: none;
+    color: white;
+
+}
+
