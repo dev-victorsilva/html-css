@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Formulário</h1>
+    <!-- action / envia o formulario para o 'cadastro-php'-->
+    <!--autocomplete / remove a sugestão de texto das caixas de nome, sobrenome e etc.-->
+    <!-- Dentro do label for="" sempre usar o id do input.-->
+    <!-- Metodo get utiliza quando for para dados não sensiveis como: nome, peso e etc-->
+    <!-- Metodo Get só pode ser enviado até 3 mil bytes aproximadamente 3 mil letras-->
+    <!-- Metodo post, se utiliza quando for para dados sensiveis, senhas, cartões de creditos, mais de 3 mil bytes, envio de arquivos, fotos e etc.-->
+    <form action="cadastro-php" method="get" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+
+    
+</body>
+</html>
