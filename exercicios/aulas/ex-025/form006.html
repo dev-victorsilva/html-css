@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.html" method="post" autocomplete="on">
+        <!-- Para envio de arquivos como foto, utilizamos post <input type="file" name="foto" id="ifoto"> -->
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00FF00">
+        </p>
+        <p>
+            <label for="inivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="100" value="22">
+        </p>
+        <p>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar"> <!-- Enviar usamos submit-->
+            <input type="reset" value="Limpar"> <!-- Botão de Limpar usamos reset -->
+        </p>
+        
+        
+    </form>
+    
+</body>
+</html>
