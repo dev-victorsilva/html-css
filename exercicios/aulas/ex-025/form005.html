@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.html" method="get" autocomplete="on">
+        <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sxesc" id="sxmasc" value="M"> <label for="sxmasc">Masculino</label><br>
+                <input type="radio" name="sxesc" id="sxfem" value="F"> <label for="sxfem">Feminino</label><br>
+                <!-- Quando se coloca o mesmo name do input radio você consegue escolher apenas um.-->
+                <!-- Colocamos o Value=" " para dar um valor ao input.-->
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esbasq" id="iesbasq"> <label for="iesbasq">Basquete</label><br>
+            <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">Volei</label><br>
+            <input type="checkbox" name="esnatac" id="iesnatac"> <label for="iesnatac">Natação</label><br>
+        </fieldset>
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar"> <!-- Enviar usamos submit-->
+            <input type="reset" value="Limpar"> <!-- Botão de Limpar usamos reset -->
+        </p>
+        
+        
+    </form>
+    
+</body>
+</html>
