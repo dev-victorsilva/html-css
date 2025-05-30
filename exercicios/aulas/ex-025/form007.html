@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.html" method="post" autocomplete="on">
+      <p>
+        <label for="iest">Estado</label>
+        <!-- Usamos optgroup para dar um grupo as options como abaixo-->
+        <select name="Estado" id="iest">
+          <optgroup label="Região Norte">
+            <option value="AC">Acre</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="PA">Pará</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="TO">Tocantins</option>
+          </optgroup>
+
+          <optgroup label="Região Nordeste">
+            <option value="AL">Alagoas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="MA">Maranhão</option>
+            <option value="PA">Paraíba</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="SE">Sergipe</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+          <option value="ADM">Administrador</option>
+          <option value="ENG">Engenheiro</option>
+          <option value="DEV">Desenvolvedor</option>
+          <option value="DES">Designer</option>
+          <option value="MED">Médico</option>
+          <option value="ADV">Advogado</option>
+          <option value="PROF">Professor</option>
+          <option value="ENF">Enfermeiro</option>
+          <option value="VET">Veterinário</option>
+          <option value="PSI">Psicólogo</option>
+          <option value="JOR">Jornalista</option>
+          <option value="BIO">Biólogo</option>
+          <option value="ARQ">Arquiteto</option>
+          <option value="GAR">Garçom</option>
+          <option value="COZ">Cozinheiro</option>
+          <option value="MEC">Mecânico</option>
+          <option value="ELE">Eletricista</option>
+          <option value="PED">Pedreiro</option>
+          <option value="VEN">Vendedor</option>
+          <option value="GES">Gestor de Projetos</option>
+        </datalist>
+      </p>
+      <p>
+        <label for="imsg">Mensagem: </label><br>
+        <!-- Para o usuario escrever um texto usamos textarea-->
+        <textarea name="msg" id="imsg" cols="30" rows="30" placeholder="Sua Mensagem..."></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <!-- Enviar usamos submit-->
+        <input type="reset" value="Limpar" />
+        <!-- Botão de Limpar usamos reset -->
+      </p>
+    </form>
+  </body>
+</html>
