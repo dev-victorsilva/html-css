@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+/* Estilo para Telas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.253);
+}
+header > h1 {
+    text-align: center;
+}
+menu li {
+    display: inline-block;
+    padding: 10px;
+    gap: 20px;
+    background-color: gray;
+}
+menu ul {
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+article {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
