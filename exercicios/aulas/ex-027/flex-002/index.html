@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        body {
+            max-width: 50%;
+            transform: translate(50%);
+        
+        }
+        div#container1 {
+            background-color: salmon;
+            display: flex;
+            flex-direction: column;
+        }
+        div#container2 {
+            background-color: salmon;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        div#container3 {
+            background-color: salmon;
+            display: flex;
+            flex-direction: row;
+        }
+        div#container4 {
+            background-color: salmon;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .space {    
+            height: 100px;
+        }
+        #texto-principal, p {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        a {
+            font-size: 1.5em;
+        }
+        img {
+            max-width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="texto-principal">Tipos de Flex-Direction</h1>
+    <p>Column</p>
+    <div id="container1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <div class="space">
+
+    </div>
+    <h1 id="texto-principal">Tipos de Flex-Direction</h1>
+    <p>Column-Reverse</p>
+    <div id="container2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="space">
+
+    </div>
+    <h1 id="texto-principal">Tipos de Flex-Direction</h1>
+    <p>Row</p>
+    <div id="container3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="space">
+
+    </div>
+    <h1 id="texto-principal">Tipos de Flex-Direction</h1>
+    <p>Row-Reverse</p>
+    <div id="container4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <div class="space">
+
+    </div>
+    <h1 id="texto-principal">Todos os exemplos</h1>
+    <p><a href="https://youtu.be/qtGI16QcV1U" target="_blank">Curso em Video</a></p>
+    <img src="imagens/img-example.png" alt="">
+</body>
+</html>
